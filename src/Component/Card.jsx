@@ -1,6 +1,7 @@
 import React from "react";
+import { IoAnalytics } from "react-icons/io5";
 import { LuBadgePercent } from "react-icons/lu";
-
+import { FaRegUser } from "react-icons/fa";
 const StatsCard = ({ title, value, icon }) => {
   return (
     <div class="main-content">
@@ -16,15 +17,15 @@ const StatsCard = ({ title, value, icon }) => {
                 >
                   <div class="card-body">
                     <div class="row">
-                      <div class="col">
+                    <div class="col">
                         <h6 class="card-title text-uppercase text-dark mb-3">
                           Traffic
                         </h6>
-                        <span class="h2 font-weight-bold mb-0">350,897</span>
+                        <span class="h2 font-weight-bold mb-0">49,65%</span>
                       </div>
                       <div class="col-auto">
-                        <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                          <i class="fas fa-chart-bar"></i>
+                        <div style={{ backgroundColor: "#FFE2E5", color: "#BF83FF" }}>
+                        <IoAnalytics size={30}/>
                         </div>
                       </div>
                     </div>
@@ -44,15 +45,15 @@ const StatsCard = ({ title, value, icon }) => {
                 >
                   <div class="card-body">
                     <div class="row">
-                      <div class="col">
+                    <div class="col">
                         <h6 class="card-title text-uppercase text-dark mb-3">
-                          New users
+                        New users
                         </h6>
                         <span class="h2 font-weight-bold mb-0">2,356</span>
                       </div>
                       <div class="col-auto">
-                        <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                          <i class="fas fa-chart-pie"></i>
+                        <div style={{ backgroundColor: "#FFF4DE", color: "#BF83FF" }}>
+                        <FaRegUser size={25}/>
                         </div>
                       </div>
                     </div>

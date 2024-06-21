@@ -7,6 +7,7 @@ import { Button, Layout, Menu, theme } from 'antd';
 import { MdOutlineSpaceDashboard } from "react-icons/md";
 import { CiBadgeDollar } from "react-icons/ci";
 import { PiHandWithdrawLight } from "react-icons/pi";
+import { IoAnalytics } from "react-icons/io5";
 import Index from '../Subpages/Index';
 
 const { Header, Sider, Content } = Layout;
