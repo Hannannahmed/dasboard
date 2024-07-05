@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined, 
@@ -23,6 +23,25 @@ const Dashboard = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setCollapsed(true);
+      } else {
+        setCollapsed(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    
+    // Initial check
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const renderContent = () => {
     switch (selectedKey) {
       case '1':
@@ -37,14 +56,14 @@ const Dashboard = () => {
   };
 
   return (
-    <Layout style={{height:"100vh"}}>
+    <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical" />
         <h5 className='text-white text-center my-5'>Logo Here</h5>
         <hr />
         <Menu
           theme="dark"
-          mode="inline" 
+          mode="inline"
           defaultSelectedKeys={['1']}
           onSelect={({ key }) => setSelectedKey(key)}
           items={[
@@ -82,8 +101,7 @@ const Dashboard = () => {
               width: 64,
               height: 64,
             }}
-          /> 
-          
+          />
         </Header>
         <Content
           style={{
@@ -92,7 +110,7 @@ const Dashboard = () => {
             minHeight: 280,
             background: colorBgContainer,
             borderRadius: borderRadiusLG,
-            overflow:'auto'
+            overflow: 'auto'
           }}
         >
           {renderContent()}

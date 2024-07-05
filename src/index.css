@@ -1,11 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Poppins',sans-serif;
 }
 
 .ant-menu-item {
   margin-top: 20px !important;
 }
+.card-stats{
+background-color: #FFE2E5 ;
+color: #FA5A7D;
+}
+.last_month{
+  font-size: 14px;
+font-weight: 600;
+}
+.card_shadow{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none ;
+  border-radius: 20px;
+}
 
-/* Cards.css */
+.card_percent{
+font-size: 28px;
+font-weight: 600;
+color: #BF83FF;
+}
 
+.percent_since{
+  font-size: 12px;
+  font-weight: 600;
+}
+.icon_card{
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+top: -40px;
+border-radius: 20px;
+}
+.monthly_report{
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+.underline_div{
+  background-color: #BF83FF;
+  height: 2px; 
+  width: 180px;
+}
+.acticeColor1{
+  font-size: 28px;
+font-weight: 600;
+  color: #FF7361;
+}
+.acticeColor2{
+  font-size: 28px;
+font-weight: 600;
+  color: #00CF7F;
+}
+.acticeColor3{
+  font-size: 28px;
+font-weight: 600;
+  color: #00BCFF;
+}
+.card_head{
+  font-size: 20px;
+  font-weight: 600;
+  color: #BF83FF;
+  
+  }
+
+.head_color1{
+  color: #FF7361 ;
+}
+.head_color2{
+  color: #00CF7F;
+}
+.head_color3{
+  color: #00BCFF;
+}
