@@ -127,10 +127,8 @@ function Index() {
         <div className="col-md-12">
           <StatsCard />
         </div>
-        <div className="col-md-12"> 
-          <h1 className="pb-3"></h1>
-        </div>
-        <div className="col-md-6 mt-4">
+        
+        <div className="col-lg-6 col-md-12 mt-4">
           <LineChart
             width={500}
             height={300}
@@ -156,7 +154,7 @@ function Index() {
             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
           </LineChart>
         </div>
-        <div className="col-md-6 mt-4">
+        <div className="col-lg-6 col-md-12  mt-4">
           <BarChart
             width={500}
             height={300}
@@ -177,7 +175,7 @@ function Index() {
             <Bar dataKey="uv" fill="#82ca9d" />
           </BarChart>
         </div>
-        <div className="col-md-12 mt-5">
+        <div className="col-lg-12  mt-5">
           <Table dataSource={tableData} columns={columns} />
         </div>
       </div>

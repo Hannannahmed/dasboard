@@ -48,7 +48,7 @@ const card_map =[
             <div class="row">
                 {card_map.map((item,index)=>(
                   <>
-              <div className="col-lg-3 mt-5">
+              <div className="col-lg-3 col-md-6 col-sm-12 mt-5">
                 <div className="card card_shadow p-3">
                   <div className="d-flex justify-content-between">
                     <h4 className={`${index!=0?"head_color"+index:"card_head"}`}>{item.card_heading}</h4>

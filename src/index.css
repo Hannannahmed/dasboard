@@ -1,82 +1,239 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
+.menu_side{
+  background-color: #ac9ac004 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar {
+  width: 16.66667%; /* Equivalent to col-md-2 */
+  transition: width 0.3s;
+  z-index: 1; /* Ensure sidebar is below content and header */
+}
+
+.sidebar-collapsed {
+  width: 120px; /* Increased width for the collapsed sidebar */
+}
+
+.content {
+  width: 83.33333%; /* Equivalent to col-md-10 */
+  transition: width 0.3s;
+  z-index: 2; /* Ensure content and header are above sidebar */
+}
+
+.content-expanded {
+  width: calc(100% - 120px); /* Adjust the content width when sidebar is collapsed */
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.side_color {
+  list-style: none;
+  padding: 0;
+}
+
+.side_color li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.side_color li:hover, .side_color li.active {
+  background-color: #e6e6e6;
+}
+
+.side_color li svg {
+  margin-right: 10px;
+}
+
+.sidebar-collapsed .side_color li {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-collapsed .side_color li svg {
+  margin-right: 0;
+}
+
+.logo_small {
+  font-size: 18px; /* Adjust the font size for small logo */
+  margin-top: 8px; /* Adjust margin to center small logo */
+}
+
+
+
+
+.logo_small{
+  font-size: 20px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.side_color {
+  height: 100vh;
+  background-color: #ac9ac08f !important;
+  padding: 20px 0 10px 10px;
+  border-right: 5px solid white;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.side_color li {
+  list-style: none;
+  padding: 15px;
+  padding-right: 0;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.side_color li:hover {
+  transition: 0s;
+  background: #ac9ac004;
+}
+
+.side_color li.active:before {
+  content: '';
+  position: absolute;
+  top:-20px;
+  right: 0px;
+  width: 20px;
+  height:20px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 10px 10px 0 white;
+}
+
+.side_color li.active:after {
+  content: '';
+  position: absolute;
+  bottom:-20px;
+  right: 0px;
+  width: 20px;
+  height:20px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 10px -10px 0 white;
+
+}
+
+.side_color li.active {
+  background: white;
+  color: black;
+}
+
 
 .ant-menu-item {
   margin-top: 20px !important;
 }
-.card-stats{
-background-color: #FFE2E5 ;
-color: #FA5A7D;
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.last_month{
+
+.card-stats {
+  background-color: #FFE2E5;
+  color: #FA5A7D;
+}
+
+.last_month {
   font-size: 14px;
-font-weight: 600;
+  font-weight: 600;
 }
-.card_shadow{
+
+.card_shadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: none ;
+  border: none;
   border-radius: 20px;
 }
 
-.card_percent{
-font-size: 28px;
-font-weight: 600;
-color: #BF83FF;
+.card_percent {
+  font-size: 28px;
+  font-weight: 600;
+  color: #BF83FF;
 }
 
-.percent_since{
+.percent_since {
   font-size: 12px;
   font-weight: 600;
 }
-.icon_card{
+
+.icon_card {
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-top: -40px;
-border-radius: 20px;
+  top: -40px;
+  border-radius: 20px;
 }
-.monthly_report{
+
+.monthly_report {
   font-size: 25px;
   font-weight: 600;
-  
+
 }
-.underline_div{
+
+.underline_div {
   background-color: #BF83FF;
-  height: 2px; 
+  height: 2px;
   width: 180px;
 }
-.acticeColor1{
+
+.acticeColor1 {
   font-size: 28px;
-font-weight: 600;
+  font-weight: 600;
   color: #FF7361;
 }
-.acticeColor2{
+
+.acticeColor2 {
   font-size: 28px;
-font-weight: 600;
+  font-weight: 600;
   color: #00CF7F;
 }
-.acticeColor3{
+
+.acticeColor3 {
   font-size: 28px;
-font-weight: 600;
+  font-weight: 600;
   color: #00BCFF;
 }
-.card_head{
+
+.card_head {
   font-size: 20px;
   font-weight: 600;
   color: #BF83FF;
-  
-  }
 
-.head_color1{
-  color: #FF7361 ;
 }
-.head_color2{
+
+.head_color1 {
+  color: #FF7361;
+}
+
+.head_color2 {
   color: #00CF7F;
 }
-.head_color3{
+
+.head_color3 {
   color: #00BCFF;
 }
