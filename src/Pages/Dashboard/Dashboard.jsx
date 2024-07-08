@@ -41,7 +41,7 @@ const Dashboard = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, []); 
   const renderContent = () => {
     switch (selectedKey) {
       case "1":
@@ -66,6 +66,7 @@ const Dashboard = () => {
       </li>
     ));
   };
+
   return (
     <Layout style={{ overflow: 'hidden' }} >
       <div className="row">
@@ -82,7 +83,7 @@ const Dashboard = () => {
             style={{
               marginLeft:"-27px",
               padding: 0,
-              background: '#fff', 
+              background: '#fff',
             }}
           >
             <div className="d-flex justify-content-between align-items-center">
@@ -110,8 +111,7 @@ const Dashboard = () => {
                 </button>
                 <ul
                   className="dropdown-menu"
-                  aria-labelledby="dropdownMenuButton1"
-                >
+                  aria-labelledby="dropdownMenuButton1">
                   <li>
                     <a className="dropdown-item" href="#">
                       <FaUser /> Profile
@@ -132,8 +132,8 @@ const Dashboard = () => {
                 margin: '24px 16px 0',
                 padding: 24,
                 minHeight: 280,
-                background: '#fff', // Update this to your `colorBgContainer` value
-                borderRadius: '8px', // Update this to your `borderRadiusLG` value
+                background: '#fff',
+                borderRadius: '8px',
                 overflow: 'initial',
                 marginTop: collapsed ? '30px' : '30px', 
               }}
