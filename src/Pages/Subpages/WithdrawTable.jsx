@@ -39,7 +39,7 @@ const WithdrawTable = () => {
       startDate: '2011-04-25',
       salary: '$320,800',
     },
-    // Add more data as needed
+
   ];
 
   return (

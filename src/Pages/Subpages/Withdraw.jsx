@@ -9,7 +9,7 @@ const Withdraw = () => {
         <div className="underline_div"></div>
     <div className="row p-3">
         <div className="col-md-6 mt-5">
-            <label htmlFor="" className='mb-2 label_class'>Account Number</label>
+            <label htmlFor="" className='mb-2 w'>Account Number</label>
             <input type="text" className='form-control' placeholder='Account Number' />
         </div>
         <div className="col-md-6 mt-5">
@@ -27,7 +27,7 @@ const Withdraw = () => {
         <h4 className='monthly_report'>Withdraw Table</h4>
         <div className="underline_div"></div>
         <div className='mt-4'>
-            <WithdrawTable />
+            <WithdrawTable />   
             </div>
         </div>
     </div>

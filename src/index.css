@@ -194,7 +194,13 @@
   font-weight: 600;
 
 }
+.form_heading{
+  width: max-content; 
+  margin: 0 auto;
+  border-bottom: 2px solid #BF83FF ;
+  padding-bottom: 10px;
 
+}
 .underline_div {
   background-color: #BF83FF;
   height: 2px;
@@ -255,6 +261,92 @@ width: 200px;
 }
 .header_class{
   margin-left: -27px;
+}
+.pre_btn{
+  background-color: #BF83FF;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.next_btn{
+  background-color: #BF83FF;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.btn_disbaled{
+  background-color: gray;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+
+  opacity: 0.5;
+
+}
+
+.package_card_frontend{
+  transform: scale(0.9);
+margin-top: 20px;
+
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.center_card{
+  padding: 30px !important;
+ margin-top: 20px;
+ height: 400px;
+transform: scale(1.1);
+  border: none;
+   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.li_class{
+font-size: 14px;
+}
+.dollar_class{
+  font-size: 35px;
+  font-weight: 600;
+}
+.pack_text{
+  font-size: 16px;
+  font-weight: 600;
+  color: #6824d6;
+}
+.btn_started{
+
+color: white;
+background-color: #6824d6;
+
+margin-top: 10px;
+border-radius: 10px;
+font-size: 14px;
+border: none;
+}
+.btn_Save{
+  background-color: #00BCFF;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+.btn_clear{
+  background-color: #FA5A7D;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
 }
 @media screen and (max-width:1024px) {
   .col_classs{
